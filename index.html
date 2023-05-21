@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    <h1 id="title">Coding Website Survey</h1>
+      <p id="description"><i>Please fill in the website information</i></p>
+    <main>
+      <form id="survey-form">
+        <label for="name" id="name-label" >Name</label>
+        <input class="bar" id="name" type="text" required placeholder="Enter your name" />
+        <label for="email" id="email-label" class="topic">Email</label>
+        <input class="bar" id="email" type="email" required placeholder="Enter your email id" />
+        <label for="age" id="number-label" class="topic">Age (optional)</label>
+        <input class="bar" id="number" type="number" placeholder="Enter your age" min="14" max="70" pattern="[0-9]{2,}" />
+        <label class="topic">Which option best describes you?</label>
+          <select title="selectopt" id="dropdown">
+            <option value="">Select one</option>
+            <option value="1">Student</option>
+            <option value="2">Intern</option>
+            <option value="3">Professional</option>
+          </select>
+        <label for="radio" id="radio-label" class="topic">Would you suggest this website to your friends?</label>
+        <label><input class="radio" type="radio" name="radio-button" value="yes" /> Yes</label>
+        <label><input class="radio" type="radio" name="radio-button" value="no" /> No</label>
+        <label><input class="radio" type="radio" name="radio-button" value="maybe" /> Maybe</label>
+
+        <label for="checkbox" id="checkbox" class="topic">What languages and frameworks do you know?</label>
+        <label><input class="check" type="checkbox" name="check" value="check1" /> C</label>
+        <label><input class="check" type="checkbox" name="check" value="check2" /> C++</label>
+        <label><input class="check" type="checkbox" name="check" value="check3" /> Python</label>
+        <label><input class="check" type="checkbox" name="check" value="check4" /> JavaScript</label>
+        <label><input class="check" type="checkbox" name="check" value="check5" /> React</label>
+        <label><input class="check" type="checkbox" name="check" value="check5" /> Angular</label>
+        <label><input class="check" type="checkbox" name="check" value="check5" /> Node</label>
+        <label><input class="check" type="checkbox" name="check" value="check5" /> Java</label>
+
+      <label for="textarea" id="textarea" class="topic">Would you like to add something?
+</label>
+      <textarea name="textarea" placeholder="Write your comments..."></textarea>
+        <button class="submit" type="submit" id="submit" value="Submit">Submit</button>
+      </form>
+    </main>
+  </body>
+
+</html>
